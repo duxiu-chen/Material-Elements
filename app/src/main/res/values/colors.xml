@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#273238</color>
+    <color name="colorPrimaryDark">#1c1c1c</color>
+    <color name="colorAccent">#9d6a80</color>
+
+    <color name="purple">#9b26af</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="grenn">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="yellow">#fdd836</color>
+    <color name="light_green">#7db343</color>
+    <color name="light_green1">#9ccc65</color>
+    <color name="light_green2">#8bc34a</color>
+
+    <color name="light_blue">#1c76d2</color>
+
+    <color name="search_bar_menu">#4F4F4F</color>
+
+    <color name="icon_select">#ff5823</color>
+
+    <color name="navigation_bottom_basic">#676767</color>
+    <color name="navigation_bottom_background">#f2f2f2</color>
+
+    <color name="navigation_bottom_normal">#999999</color>
+
+    <color name="white2">#cbcccc</color>
+
+    <color name="dark_action_bar">#222222</color>
+    <color name="dark_background">#010101</color>
+    <color name="dark_card_background">#283339</color>
+
+    <color name="cyan">#37474f</color>
+
+    <color name="bottom_movie">#455b66</color>
+    <color name="bottom_music">#ad1557</color>
+    <color name="bottom_books">#616161</color>
+    <color name="newsstand">#00695c</color>
+
+    <color name="shopping">#019688</color>
+    <color name="dan_lv">#4cb6ac</color>
+
+    <color name="title_bar_background">#1d77d2</color>
+
+    <color name="pink_red">#e81e63</color>
+    <color name="light_red">#e51c23</color>
+    <color name="yellow_light">#fbc02d</color>
+    <color name="orange">#ffa726</color>
+    <color name="pink">#ff4181</color>
+    <color name="light_pink">#ff80a8</color>
+    <color name="light_pink1">#e57373</color>
+
+
+    <color name="light_cyan">#5f7d8b</color>
+</resources>

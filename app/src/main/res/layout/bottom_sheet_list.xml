@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="300dp"
+    app:elevation="4dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:orientation="vertical">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preview"
+            android:textSize="18sp"
+            android:textColor="#232323"
+            android:drawableLeft="@drawable/ic_preview"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:onClick="onViewClick"
+            android:padding="16dp"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textSize="18sp"
+            android:textColor="#232323"
+            android:drawableLeft="@drawable/ic_share"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:onClick="onViewClick"
+            android:padding="16dp"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_link"
+            android:textSize="18sp"
+            android:textColor="#232323"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_get_link"
+            android:gravity="center_vertical"
+            android:onClick="onViewClick"
+            android:padding="16dp"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copy"
+            android:textSize="18sp"
+            android:textColor="#232323"
+            android:drawableLeft="@drawable/ic_copy"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:onClick="onViewClick"
+            android:padding="16dp"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:tint="@color/search_bar_menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_menu"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:clickable="true"
+                app:layout_constraintLeft_toRightOf="@+id/img_menu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search"
+                android:tint="@color/search_bar_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:padding="16dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_marginTop="8dp">
+
+        <include layout="@layout/bottom_navigation_content_layout"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#55676767"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorColor="@color/black">
+        <android.support.design.widget.TabItem
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:icon="@drawable/ic_home"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:icon="@drawable/ic_search" />
+        <android.support.design.widget.TabItem
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:icon="@drawable/ic_favorite"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:icon="@drawable/ic_profile"/>
+    </android.support.design.widget.TabLayout>
+
+</LinearLayout>

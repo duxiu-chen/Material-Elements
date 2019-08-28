@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/photo_male_3"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="David Park"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:hint="Write something"
+        android:gravity="top"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_camera"
+            android:background="@drawable/ripple_border_less"
+            android:tint="@color/navigation_bottom_normal"
+            android:layout_margin="8dp"/>
+
+        <ImageButton
+            android:id="@+id/img_link"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_get_link"
+            android:background="@drawable/ripple_border_less"
+            android:tint="@color/navigation_bottom_normal"
+            android:layout_margin="8dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/img_more"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_more_vert"
+            android:background="@drawable/ripple_border_less"
+            android:tint="@color/navigation_bottom_normal"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

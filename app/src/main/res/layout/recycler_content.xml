@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/image_6"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Praesent Maximus Nisl Metus, Vitae Imperdiet Eros"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 Mar 2018"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/image_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Quisque Lobortis Massa Quis Augue Venenatis"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 Mar 2018"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/image_6"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="In Lobortis Aliquet Rutrum, Praesent Eget"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04 Mar 2018"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/image_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Cras Finibus Tortor Quis Fermentum Suscipit"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 Mar 2018"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/image_6"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Aenean Eleifend Lorem Nec Posuere"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06 Mar 2018"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

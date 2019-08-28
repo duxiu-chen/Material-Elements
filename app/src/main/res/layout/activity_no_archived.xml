@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/title_bar"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_dark"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_basic"/>
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_basic"
+                        android:layout_marginTop="@dimen/view_height"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_basic"
+                        android:layout_marginTop="@dimen/view_height"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_light_dark"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+                    <View
+                        android:layout_width="90dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_normal"/>
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_normal"
+                        android:layout_marginTop="@dimen/view_height"/>
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/navigation_bottom_normal"
+                        android:layout_marginTop="@dimen/view_height"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archived conversations appear here"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

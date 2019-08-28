@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Material Design</string>
+
+    <string name="app_about">MaterialX App</string>
+
+    <string name="search">Search</string>
+
+    <string name="recent">Recents</string>
+    <string name="favorite">Favorite</string>
+    <string name="nearby">Nearby</string>
+
+    <string name="new_release">New Release</string>
+    <string name="more">More</string>
+
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+
+    <string name="september">The morning of September</string>
+    <string name="xusong">Xu Song</string>
+
+    <string name="tower">Tokyo iron tower</string>
+    <string name="japan">Japan</string>
+
+    <string name="recommended">Recommended</string>
+
+    <string name="dawn">Dawn</string>
+    <string name="river_bank">River Bank</string>
+    <string name="mountain">Lush Mountain</string>
+
+    <string name="top_rated">Top Rated</string>
+
+    <string name="shop">Shopping</string>
+
+    <string name="art_computation">Art of computation</string>
+    <string name="peace">Peace at the window</string>
+
+    <string name="movie">Movie</string>
+    <string name="music">Music</string>
+    <string name="books">Books</string>
+    <string name="newsstand">Newsstand</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+
+    <string name="loading">Loading...</string>
+
+    <string name="close">CLOSE</string>
+    <string name="detail">DETAILS</string>
+
+    <string name="bottom_sheet_basic_content">I need three things: love, friendship and books. But how does the three interlock? Hot love can enrich the contents of books, and books are also the most faithful friends of people.</string>
+
+    <string name="preview">Preview</string>
+    <string name="share">Share</string>
+    <string name="get_link">Get Link</string>
+    <string name="copy">Make a Copy</string>
+
+
+    <string name="backpacker">The Backpacker</string>
+    <string name="park_bench">Park Bench</string>
+    <string name="keyboard">Computer Keyboard</string>
+    <string name="mist_mountain">Mist Mountain</string>
+    <string name="coffee_camera">Coffee Camera</string>
+    <string name="city_building">City Building</string>
+    <string name="desk">Architect Desk</string>
+    <string name="cocktails">Table Cocktails</string>
+    <string name="hill">Foggy Hill</string>
+    <string name="side_park">Side Park</string>
+    <string name="night_street">Night Street</string>
+    <string name="forest">River Forest</string>
+    <string name="clothes">Hanging Clothes</string>
+    <string name="window">Grunge Window</string>
+    <string name="flower">Morning Flower</string>
+
+    <string name="bottom_sheet_floating_content">Others can work for you, but can not feel for you. Walk on our own way in life, success rely on themselves to win.</string>
+
+    <string name="force_stop">force stop</string>
+    <string name="uninstall">uninstall</string>
+    <string name="storage">Storage</string>
+    <string name="total">Total</string>
+    <string name="app">App</string>
+    <string name="data">Data</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="data_usage">Data Usage</string>
+    <string name="distance">12 min away</string>
+    <string name="record_voice">Record Voice</string>
+    <string name="call_friends">Call Friends</string>
+
+    <string name="cocktail_detail">Cocktail is a kind of beverage which is based on spirits or wines, mixed with juice, egg white, bitter essence, milk, coffee, cocoa, sugar and other auxiliary materials, stirred or shaken.</string>
+    <string name="sakura_tears">Sakura Tears</string>
+    <string name="sakura_tears_detail">A beautiful pure music, inexplicable touching and heartache.</string>
+    <string name="listen">Listen</string>
+    <string name="travel">You have a trip</string>
+    <string name="brother">My big cousin</string>
+
+    <string name="nature_park">Lingshan Park</string>
+    <string name="service">Facilities</string>
+    <string name="food">Food &amp; Cafe</string>
+    <string name="fresh_air">Fresh Air</string>
+    <string name="parking">Parking Area</string>
+    <string name="canopy">Cozy Canopy</string>
+    <string name="address">Address</string>
+    <string name="address_detail">No. 187 Zao Shan Road, Yunyan District, Guiyang, Guizhou</string>
+    <string name="description">Description</string>
+    <string name="description_detail">Located in the mountains of Guiyang Qianling Park, Qianling Mountain Zoo is situated on the depression platform of Zhangbofeng Mountain. It is a garden for breeding and researching wildlife and exploring the mysteries of nature. The Qianlingshan Zoo, which covers an area of 7.55 hectares, was built in 1958. The terrain is relatively flat and the terrain rises from the gate to the back. Various cages and feeding grounds in Qianlingshan Zoo are built in the valley along the mountain. There are panda specimen exhibition rooms in the Langur Monkey Pavilion, Xiongchi Deer Park in the Lion Tiger Pavilion and so on. The cage covers an area of 3300 square meters. There are more than 40 animals and more than 200 head animals on display. Among them, there are rare animals, such as the white tiger, the northeastern tiger, the African lion, the leopard, the peacock, the ostrich, the great Swan and antelope, and the rare animals, such as the black langur pheasant, the red-bellied pheasant, the white pheasant and so on. Inside and outside the garden, Cui Ling is surrounded by birds and flowers. It has become an important place for tourists and youngsters to enjoy entertainment, science popularization and ecological protection.</string>
+
+
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="compose">Compose Mail</string>
+
+    <string name="conformation_dialog">CONFIRMATION DIALOG</string>
+    <string name="alert_dialog">ALERT DIALOG</string>
+    <string name="single_choice_dialog">SINGLE CHOICE DIALOG</string>
+    <string name="multiple_choice_dialog">MULTIPLE CHOICE DIALOG</string>
+
+    <string name="term_of_services">1. Important Notes: In particular, users (you) should carefully read the terms and conditions of this service, including the exemption or limitation of liability for this application and the limitation of users\'rights. Please review and decide whether or not to accept or accept the terms of service. If you disagree with the terms of service, you should not use or voluntarily cancel the services provided by this application. Your usage will be deemed to be your full acceptance of the Terms of Service, including acceptance of any changes made at any time by this application.
+2. According to the development of the Internet and the changes of the relevant laws and regulations of the People\'s Republic of China, the application will constantly improve the quality of service and modify the terms and conditions of membership services accordingly. The user\'s rights and obligations are expressed in the latest terms of service. The application reserves the right to modify or interrupt the service at any time without notifying you. The application exercises the right to modify or interrupt the service without being responsible for you or a third party.
+3. Guarantee the authenticity, correctness and completeness of the user\'s identity when using the services. If the information changes, you should change it in time. After completing the registration procedure safely and receiving a password and account number, you should keep the password and account number confidential. You are fully responsible for the activities of any person who uses your password and account number. This application is not responsible for any illegal or unauthorized use of your account and password.
+4. users should take full responsibility for what they publish in this application. If the user violates the laws and regulations of the state or the terms of this service, the application has the right to stop providing services to the user without assuming any liability, such as causing any damage to the application or the cooperative company or suffering from any disputes, litigation, claims from a third party, etc., the user shall compensate the application or the cooperative company accordingly. The user shall be liable for all consequences arising out of breach of the terms of service.
+5. The application draws the user's attention to the fact that the application has the right to modify the content of the service, interrupt or suspend some or all of the services without prior notice, in order to protect the autonomy of the company's business development and adjustment. The modification will be published in the form of announcement on the relevant pages of the application and will be deemed as notification once it is published.
+6., this application attaches great importance to the protection of user privacy. Privacy protection is a basic policy of this application. The registration information provided by you and some other personal data about you retained by this application will be regulated by the privacy laws of China and the Privacy Protection Statement of this application.
+7. This service clause should be consistent with the relevant laws and regulations of the state. If there is any conflict between the service clause and the relevant laws and regulations, the conflict shall be governed by the provisions of the laws and regulations.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="company_goal">Selected popular wallpapers are updated every day. All the dynamic Wallpapers you like are here.You can set up music dynamic wallpaper, so that your wallpaper is not monotonous and boring.Good wallpaper everyone share, upload your favorite wallpaper will have the opportunity to be included in the software oh.Participate in the production of dynamic wallpaper to become our original creator,\ let's make dynamic wallpaper into user's favorite wallpaper software.</string>
+    <string name="location">Nanming District, Guiyang City, Guizhou Province, China</string>
+    
+
+    <string name="umeng_appkey">5c064149b465f5424100033e</string>
+    <string name="bugly_appid">64a9366242</string>
+
+    <string name="en_about">The best android implementation of material UI components.This app implemented based on Google Design Guidelines</string>
+    <string name="ch_about">一款不错的Material Design UI 组件 APP.本应用基于谷歌设计指南实现</string>
+</resources>

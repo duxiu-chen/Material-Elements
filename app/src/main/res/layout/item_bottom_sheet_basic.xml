@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_head_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"/>
+
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#232323"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

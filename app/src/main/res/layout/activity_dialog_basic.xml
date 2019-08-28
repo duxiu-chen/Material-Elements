@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/confirmation_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_border"
+                android:text="@string/conformation_dialog"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"/>
+
+            <View
+                android:background="@color/navigation_bottom_basic"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <Button
+                android:id="@+id/alert_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_border"
+                android:text="@string/alert_dialog"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"/>
+
+            <View
+                android:background="@color/navigation_bottom_basic"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <Button
+                android:id="@+id/single_choice_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_border"
+                android:text="@string/single_choice_dialog"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"/>
+
+            <View
+                android:background="@color/navigation_bottom_basic"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <Button
+                android:id="@+id/multiple_choice_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_border"
+                android:text="@string/multiple_choice_dialog"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="16dp"/>
+
+            <View
+                android:background="@color/navigation_bottom_basic"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

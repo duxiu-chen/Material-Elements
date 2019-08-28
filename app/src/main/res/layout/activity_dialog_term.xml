@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <Button
+        android:id="@+id/btn_term_of_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Term of Services"
+        android:textColor="@color/bottom_books"
+        android:background="@drawable/dialog_button_bg_color"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btn_gdpr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GDPR"
+        android:textColor="@color/bottom_books"
+        android:background="@drawable/dialog_button_bg_color"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

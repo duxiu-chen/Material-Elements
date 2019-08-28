@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:tint="@color/navigation_bottom_normal"
+        android:padding="16dp"
+        android:layout_gravity="right"
+        android:background="@drawable/ripple_border_less"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/photo_male_1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Roberts Turner"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet , consectetur adipiscing elit"
+        android:gravity="center"
+        android:layout_margin="14dp"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/app_btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Follow"
+        android:textColor="@color/white"
+        android:background="@drawable/appcompat_button_shape2"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="35.1K"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/search_bar_menu"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="256" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/search_bar_menu"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

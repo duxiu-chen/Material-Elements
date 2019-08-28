@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shopping"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_menu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2026.24"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INV-ZT45C"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase Code"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="16dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_payment"
+                    android:background="@drawable/ripple_border_less"
+                    android:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_date"
+                android:tint="@color/navigation_bottom_normal"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invoice Date"
+                android:textSize="18sp"
+                android:textColor="@color/navigation_bottom_normal"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2.30 PM,22 March 2018"
+            android:textSize="18sp"
+            android:layout_marginLeft="64dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal"
+            android:layout_marginTop="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="12dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grid"
+                    android:tint="@color/navigation_bottom_normal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/navigation_bottom_normal"
+                    android:text="Item(s)"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"/>
+                <ImageButton
+                    android:id="@+id/btn_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand_more"
+                    android:background="@drawable/ripple_border_less"
+                    android:padding="4dp"
+                    android:tint="@color/navigation_bottom_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:minHeight="150dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Web Design"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginLeft="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$445.62"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="E-Book Design"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginLeft="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$278.12"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Hosting Plan"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginLeft="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$719.00"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Brochure Design"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginLeft="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$573.50"
+                        android:textSize="16sp"
+                        android:textColor="@color/dark_action_bar"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="48dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2026.24"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="16dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="12dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chips"
+                    android:tint="@color/navigation_bottom_normal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/navigation_bottom_normal"
+                    android:text="Description"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"/>
+                <ImageButton
+                    android:id="@+id/btn_show2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand_more"
+                    android:background="@drawable/ripple_border_less"
+                    android:padding="4dp"
+                    android:tint="@color/navigation_bottom_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_detail2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:minHeight="160dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet , consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie. Fusce quis mauris a enim sollicitudin"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_action_bar"
+                    android:layout_marginLeft="48dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet , consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie. Fusce quis mauris a enim sollicitudin"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_action_bar"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/navigation_bottom_normal" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

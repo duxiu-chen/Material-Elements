@@ -1,0 +1,129 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#cccccc"
+            app:contentPaddingLeft="8dp"
+            app:contentPaddingRight="8dp"
+            app:contentPaddingTop="5dp"
+            app:contentPaddingBottom="5dp"
+            android:alpha="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Record Voice"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_voice"
+            android:tint="@color/dark_action_bar"
+            app:backgroundTint="#cccccc"
+            app:fabSize="mini"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#cccccc"
+            app:contentPaddingLeft="8dp"
+            app:contentPaddingRight="8dp"
+            app:contentPaddingTop="5dp"
+            app:contentPaddingBottom="5dp"
+            android:alpha="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Call Friends"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_phone"
+            android:tint="@color/dark_action_bar"
+            app:backgroundTint="#cccccc"
+            app:fabSize="mini"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/pink"
+        app:fabSize="normal"/>
+
+</android.support.design.widget.CoordinatorLayout>

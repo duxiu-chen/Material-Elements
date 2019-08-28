@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ece9e1">
+
+        <include layout="@layout/serch_bar"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="top|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_directions_car"
+        android:tint="@color/white"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/pink"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="6dp"
+            android:background="#e2e2e2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Dandelion Chocolate"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:gravity="center_vertical">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:rating="3.5"
+                android:progressTint="@color/yellow"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating_bar_style_mini"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5(5.0)"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="#cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="@string/distance"
+            android:textSize="15sp"
+            android:textColor="@color/title_bar_background"
+            android:layout_marginBottom="80dp"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

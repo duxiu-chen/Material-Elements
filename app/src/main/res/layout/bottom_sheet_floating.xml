@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:elevation="4dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Side Park"
+                android:layout_margin="16dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintLeft_toLeftOf="@id/tv_title"
+                android:layout_marginTop="8dp"
+                android:text="11 Feb 2015"/>
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_close"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_sheet_floating_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:rating="5"
+            android:progressTint="@color/yellow"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_bar_style"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Submit Rating"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/submit_rating"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

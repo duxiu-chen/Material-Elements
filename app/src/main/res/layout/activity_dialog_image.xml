@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_header_polygon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Header Polygon"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="48dp"/>
+
+            <Button
+                android:id="@+id/btn_header_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Header Product"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_image_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image Full"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_image_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image Center"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhugeng.materialdesign">
+
+    <uses-sdk android:minSdkVersion="8"></uses-sdk>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_small_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.bottomnavigation.BottomNavigationBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationShiftingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationLightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationDarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationIconActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationPrimaryActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.bottomsheet.BottomSheetBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomsheet.BottomSheetListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomsheet.BottomSheetMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomsheet.BottomSheetFloatingActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.button.ButtonBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.button.ButtonUtilitiesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.button.ButtonFabMiddleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.button.FabMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.button.FabMoreTextActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.cards.CardsBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.cards.CardsOverlapActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.cards.CardsWizardActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.cards.CardsWizardOverlapActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.chips.ChipsBasicActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.dialog.DialogBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.dialog.DialogCustomActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.dialog.DialogTermActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.dialog.DialogImageActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.expansion.ExpansionBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.expansion.ExpansionInvoiceActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.grid.GridBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.grid.GridSingleLineActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.grid.GridSectionedActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.list.ListBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.list.ListSectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.list.ListAnimationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.list.ListDragActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.list.ListSwipeActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.menu.DrawerNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.menu.DrawerLightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.menu.DrawerDarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.menu.OverflowToolbarActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.pickers.DateLightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.pickers.DateDarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.pickers.TimePickLightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.pickers.TimePickDarkActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.pickers.ColorActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.progress_activity.ProgressBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.progress_activity.ProgressLinearCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.progress_activity.ProgressCircleCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.progress_activity.ProgressDotsBoundsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.progress_activity.ProgressDotsFadeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.progress_activity.ProgressDotsGrowActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.snackbar_toast.BasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.snackbar_toast.SnackbarAndFab" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.tab.TabBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.tab.TabIconActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.tab.TabIconTextActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.tab.TabScrollActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.profile.Polygon" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.profile.ProfilePurpleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.profile.ProfileGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.profile.ProfileCardListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.profile.ProfileImgAppbarActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.noitempage.NoArchivedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.noitempage.NoSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.noitempage.NoInternetActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.noitempage.NoCityActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.timeline.TimeLineFeedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.timeline.TimeLinePathActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.timeline.TimeLineDotCardActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.login.LoginSmipleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.LoginSimpleGreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.LoginImageTealActivity" android:screenOrientation="portrait"
+            android:theme="@style/ImageActivityStyle"/>
+        <activity android:name=".activity.login.LoginCardActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.LoginCardOverlapActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.about.App" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.about.AboutSimplyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.about.AboutSimplyBlueActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.about.AboutCompanyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.about.AboutCompanyCardActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/navigation_bottom_background"
+            android:padding="12dp"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_get_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PICK DATE"
+            android:layout_centerInParent="true"
+            android:background="@drawable/submit_rating"
+            android:textColor="@color/white"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

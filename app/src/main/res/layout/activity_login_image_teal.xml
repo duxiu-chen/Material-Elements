@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/image_26"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc009688"/>
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hope you enjoy the stay"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:textColorHint="@color/white">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/MyEditText"
+                        android:hint="Username" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/white">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:hint="Password"
+                        android:theme="@style/MyEditText"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="24dp">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:tint="@color/newsstand"
+                        android:backgroundTint="@color/white"
+                        android:layout_centerInParent="true"
+                        app:borderWidth="0dp"
+                        android:clickable="true"
+                        app:rippleColor="@color/newsstand"/>
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:progressTint="@color/white"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Sign up for an account?"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

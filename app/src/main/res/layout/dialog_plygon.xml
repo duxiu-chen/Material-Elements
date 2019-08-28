@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@mipmap/bg_polygon"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invitation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Quisque imperdiet nunc at massa dictum volutpat. Etiam id orci ipsum. Integer id ex dignissim." />
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECILNE"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:theme="@style/PrimaryButton2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOIN"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:theme="@style/AccentButton2"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

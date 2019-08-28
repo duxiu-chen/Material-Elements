@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="300dp"
+    app:elevation="4dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Anibuda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_sheet_basic_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/ripple_border_btn"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:text="@string/close"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        app:layout_constraintRight_toLeftOf="@id/btn_detail"
+        android:textColor="@color/pink"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/ripple_border"/>
+
+</android.support.constraint.ConstraintLayout>

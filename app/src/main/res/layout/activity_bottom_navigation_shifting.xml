@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/navigation_bottom_background">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="88dp" />
+
+            <include layout="@layout/bottom_navigation_content_layout"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include android:id="@+id/search_bar" layout="@layout/serch_bar"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/navigation_bottom_basic"
+        app:menu="@menu/menu_bottom_navigation_shifting"
+        app:itemTextColor="@drawable/bottom_navigation_basic_selector"
+        app:itemIconTint="@drawable/bottom_navigation_basic_selector" />
+</android.support.constraint.ConstraintLayout>

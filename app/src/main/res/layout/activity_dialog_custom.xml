@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_custom_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Info"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="24dp"/>
+
+            <Button
+                android:id="@+id/btn_custom_warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Warning"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_custom_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Light"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_custom_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Dark"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_custom_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Post"
+                android:textColor="@color/bottom_books"
+                android:background="@drawable/dialog_button_bg_color"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:id="@+id/rowBG"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:background="@color/light_blue">
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/photo_female_1"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

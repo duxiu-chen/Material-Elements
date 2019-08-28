@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ece9e1">
+
+        <include layout="@layout/serch_bar"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="top|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_location"
+        android:tint="@color/white"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/pink"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="80dp"
+        app:elevation="4dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="32dp"
+                android:layout_height="6dp"
+                android:background="#e2e2e2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:text="Chocolate"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/map_image"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

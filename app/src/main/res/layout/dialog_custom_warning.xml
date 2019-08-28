@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/light_pink1"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_no_cloud"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="No Internet!"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet , consectetur adipiscing elit"
+        android:gravity="center"
+        android:layout_margin="14dp"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/app_btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Retry"
+        android:textColor="@color/white"
+        android:background="@drawable/appcompat_button_shape2"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

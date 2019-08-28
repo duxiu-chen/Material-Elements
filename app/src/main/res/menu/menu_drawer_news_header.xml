@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_main" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home" android:id="@+id/menu_home" android:title="@string/home" />
+        <item android:icon="@drawable/ic_trending" android:id="@+id/menu_trending" android:title="Trending" />
+        <item android:icon="@drawable/ic_time" android:id="@+id/menu_latest" android:title="Latest" />
+        <item android:icon="@drawable/ic_highlight" android:id="@+id/menu_high_light" android:title="Highlight" />
+    </group>
+    <group android:id="@+id/group_other" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_settings" android:id="@+id/menu_setting" android:title="Settings" />
+        <item android:icon="@drawable/ic_help_outline_black_24dp" android:id="@+id/menu_help" android:title="Help" />
+    </group>
+
+</menu>

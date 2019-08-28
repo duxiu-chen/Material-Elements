@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/yellow_light">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image_9"
+                        android:foreground="#3a000000"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/photo_female_7"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/white"
+                            android:layout_marginTop="48dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jessica W. Willis"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_marginTop="16dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/navigation_bottom_background"
+                            android:text="301 Followers  |  250 Following"
+                            android:layout_marginTop="8dp"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image_12"
+                        android:foreground="#3a000000"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Foggy Hill"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_marginTop="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="23 minutes"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="15"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_collections"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"
+                                android:layout_marginLeft="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add"
+                        app:backgroundTint="@color/yellow_light"
+                        android:layout_alignParentRight="true"
+                        android:tint="@color/white"
+                        app:rippleColor="@color/white"
+                        android:clickable="true"
+                        android:layout_margin="12dp"
+                        app:fabSize="mini"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image_3"
+                        android:foreground="#3a000000"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City Building"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_marginTop="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="18 minutes"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="50"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_collections"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"
+                                android:layout_marginLeft="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add"
+                        app:backgroundTint="@color/yellow_light"
+                        android:layout_alignParentRight="true"
+                        android:tint="@color/white"
+                        app:rippleColor="@color/white"
+                        android:clickable="true"
+                        android:layout_margin="12dp"
+                        app:fabSize="mini"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image_8"
+                        android:foreground="#3a000000"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Side Park"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_marginTop="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="45 minutes"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/navigation_bottom_background"
+                                android:text="36"
+                                android:layout_marginTop="8dp"
+                                android:drawableLeft="@drawable/ic_collections"
+                                android:drawableTint= "@color/navigation_bottom_background"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:drawablePadding="4dp"
+                                android:layout_marginLeft="8dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add"
+                        app:backgroundTint="@color/yellow_light"
+                        android:layout_alignParentRight="true"
+                        android:tint="@color/white"
+                        app:rippleColor="@color/white"
+                        android:clickable="true"
+                        android:layout_margin="12dp"
+                        app:fabSize="mini"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

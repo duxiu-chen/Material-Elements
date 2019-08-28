@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No cities here"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add one by clicking round button below"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@mipmap/bg_no_item_city"
+            android:layout_alignParentBottom="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink_red"
+            android:src="@drawable/ic_cloud_upload"
+            android:tint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
