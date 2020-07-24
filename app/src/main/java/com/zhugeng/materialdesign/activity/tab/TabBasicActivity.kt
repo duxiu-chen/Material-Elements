@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.view.PagerAdapter
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -38,7 +39,6 @@ class TabBasicActivity: AppCompatActivity() {
         viewpager.adapter = adapter
         tabLayout.setupWithViewPager(viewpager)
         tabLayout.setTabsFromPagerAdapter(adapter)
-
     }
 
     class MyAdapter constructor(var context: Context, private val titles: LinkedList<String>) : android.support.v4.view.PagerAdapter() {

@@ -84,13 +84,13 @@ class ListSwipeActivity: AppCompatActivity() ,RecyclerTouchListener.RecyclerTouc
 
     override fun onResume() {
         super.onResume()
-        recyclerView.addOnItemTouchListener(onTouchListener)
+        recyclerView.addOnItemTouchListener(onTouchListener!!)
 
     }
 
     override fun onPause() {
         super.onPause()
-        recyclerView.removeOnItemTouchListener(onTouchListener)
+        recyclerView.removeOnItemTouchListener(onTouchListener!!)
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {

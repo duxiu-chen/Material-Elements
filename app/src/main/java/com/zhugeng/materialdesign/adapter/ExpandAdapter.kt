@@ -37,6 +37,7 @@ class ExpandAdapter(private var datas : MutableList<MenuBeans>,private val conte
                 groupViewHolder.rightImg = contentView.findViewById(R.id.img_right)
                 groupViewHolder.tvTitle = contentView.findViewById(R.id.tv_text)
                 groupViewHolder.rippleLayout = contentView.findViewById(R.id.ripple_layout)
+                groupViewHolder.hasNew = contentView.findViewById(R.id.hasNew)
                 contentView.tag = groupViewHolder
             } else {
                 contentView = convertView
@@ -44,6 +45,11 @@ class ExpandAdapter(private var datas : MutableList<MenuBeans>,private val conte
             }
             groupViewHolder.tvTitle!!.text = datas[groupPosition].title
             groupViewHolder.menuImg!!.setImageResource(datas[groupPosition].resId)
+
+            if (datas[groupPosition].isVisible)
+                groupViewHolder.hasNew!!.visibility = View.VISIBLE
+            else
+                groupViewHolder.hasNew!!.visibility = View.GONE
 
             return contentView
         /*}else{
@@ -71,12 +77,17 @@ class ExpandAdapter(private var datas : MutableList<MenuBeans>,private val conte
             contentView = LayoutInflater.from(context).inflate(R.layout.item_menu_child, parent, false)
             childViewHolder = ChildViewHolder()
             childViewHolder.tvTitle = contentView.findViewById(R.id.item_title)
+            childViewHolder.hasNew = contentView.findViewById(R.id.hasNew)
             contentView.tag = childViewHolder
         } else {
             contentView = convertView
             childViewHolder = convertView.tag as ChildViewHolder
         }
         childViewHolder.tvTitle!!.text = datas[groupPosition].childBeans[childPosition].title
+        if (datas[groupPosition].childBeans[childPosition].isHasNew)
+            childViewHolder.hasNew!!.visibility = View.VISIBLE
+        else
+            childViewHolder.hasNew!!.visibility = View.GONE
         return contentView
     }
 
@@ -93,9 +104,11 @@ class ExpandAdapter(private var datas : MutableList<MenuBeans>,private val conte
         var menuImg: ImageView? = null
         var rightImg: ImageView? = null
         var rippleLayout: MaterialRippleLayout? =null
+        var hasNew: View? = null
     }
 
     internal class ChildViewHolder {
         var tvTitle: TextView? = null
+        var hasNew: View? = null
     }
 }

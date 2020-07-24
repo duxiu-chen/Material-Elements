@@ -45,7 +45,7 @@ class ProgressAdapter(private var data: LinkedList<ProgressBeans>, private val c
     }
 
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(item: ProgressBeans){
             itemView.findViewById<ImageView>(R.id.item_img).setImageResource(item.resId)
             itemView.findViewById<TextView>(R.id.item_name).text = item.name

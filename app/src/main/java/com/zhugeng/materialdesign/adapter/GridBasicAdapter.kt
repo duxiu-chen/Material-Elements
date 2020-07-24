@@ -23,7 +23,7 @@ class GridBasicAdapter(private val data: IntArray, private val context: Context)
     }
 
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(resId: Int, context: Context){
             var img = itemView.findViewById<ImageView>(R.id.item_img)
             var displayMetrics: DisplayMetrics = context.resources.displayMetrics

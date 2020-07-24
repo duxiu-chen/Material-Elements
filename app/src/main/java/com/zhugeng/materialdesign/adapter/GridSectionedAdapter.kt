@@ -39,7 +39,7 @@ class GridSectionedAdapter(private val data: IntArray, private val titles:Linked
         holder.bind(titles[position/7], data[position], context, getItemViewType(position))
     }
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(title:String, resId: Int, context: Context, type: Int){
             if (type == 2){
                 var img = itemView.findViewById<ImageView>(R.id.item_img)

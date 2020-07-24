@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhugeng.materialdesign">
 
-    <uses-sdk android:minSdkVersion="8"></uses-sdk>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
@@ -31,6 +30,8 @@
         <activity android:name=".activity.bottomnavigation.BottomNavigationDarkActivity" android:screenOrientation="portrait"/>
         <activity android:name=".activity.bottomnavigation.BottomNavigationIconActivity" android:screenOrientation="portrait"/>
         <activity android:name=".activity.bottomnavigation.BottomNavigationPrimaryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationInsertActivity" android:screenOrientation="portrait"/>
 
         <activity android:name=".activity.bottomsheet.BottomSheetBasicActivity" android:screenOrientation="portrait"/>
         <activity android:name=".activity.bottomsheet.BottomSheetListActivity" android:screenOrientation="portrait"/>
@@ -122,6 +123,9 @@
         <activity android:name=".activity.about.AboutCompanyActivity" android:screenOrientation="portrait"/>
         <activity android:name=".activity.about.AboutCompanyCardActivity" android:screenOrientation="portrait"/>
 
+        <activity android:name=".activity.anim.SVGAnimActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.anim.SharedElementActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.anim.Detail1Activity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

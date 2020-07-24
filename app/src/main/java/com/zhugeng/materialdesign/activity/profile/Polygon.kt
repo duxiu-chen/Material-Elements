@@ -24,12 +24,12 @@ class Polygon: AppCompatActivity() {
     }
 
     private fun initListener() {
-        appbar.addOnOffsetChangedListener { appBarLayout, verticalOffset ->
-            val value = DensityUtil.dp2px(this, 144f).toFloat()
-            val scale = (value + verticalOffset)/ value
+        appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { p0, p1 ->
+            val value = DensityUtil.dp2px(this@Polygon, 144f).toFloat()
+            val scale = (value + p1)/ value
             img_user.scaleX = scale
             img_user.scaleY = scale
-        }
+        })
     }
 
     private fun initView() {

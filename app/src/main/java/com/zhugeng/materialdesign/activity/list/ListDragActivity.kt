@@ -49,17 +49,17 @@ class ListDragActivity: AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
         var mItemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.Callback() {
-            override fun getMovementFlags(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?): Int {
+            override fun getMovementFlags(p0: RecyclerView, p1: RecyclerView.ViewHolder): Int {
                 val dragFlags = ItemTouchHelper.UP or ItemTouchHelper.DOWN
                 val swipeFlags = 0
                 return makeMovementFlags(dragFlags, swipeFlags)
             }
 
-            override fun onMove(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?, target: RecyclerView.ViewHolder?): Boolean {
+            override fun onMove(p0: RecyclerView, p1: RecyclerView.ViewHolder, p2: RecyclerView.ViewHolder): Boolean {
                 //得到当拖拽的viewHolder的Position
-                val fromPosition = viewHolder!!.adapterPosition
+                val fromPosition = p2!!.adapterPosition
                 //拿到当前拖拽到的item的viewHolder
-                val toPosition = target!!.adapterPosition
+                val toPosition = p1!!.adapterPosition
                 if (fromPosition < toPosition) {
                     for (i in fromPosition until toPosition) {
                         Collections.swap(datas, i, i + 1)
@@ -73,7 +73,7 @@ class ListDragActivity: AppCompatActivity() {
                 return true
             }
 
-            override fun onSwiped(viewHolder: RecyclerView.ViewHolder?, direction: Int) {
+            override fun onSwiped(p0: RecyclerView.ViewHolder, direction: Int) {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
 

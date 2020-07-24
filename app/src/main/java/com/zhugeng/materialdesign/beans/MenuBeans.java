@@ -62,9 +62,14 @@ public class MenuBeans {
 
     public static class ChildBeans{
         private String subTitle;
-
+        private boolean hasNew;
         public ChildBeans(String subTitle) {
             this.subTitle = subTitle;
+        }
+
+        public ChildBeans(String subTitle, boolean hasNew) {
+            this.subTitle = subTitle;
+            this.hasNew = hasNew;
         }
 
         public String getTitle() {
@@ -73,6 +78,14 @@ public class MenuBeans {
 
         public void setTitle(String subTitle) {
             this.subTitle = subTitle;
+        }
+
+        public boolean isHasNew() {
+            return hasNew;
+        }
+
+        public void setHasNew(boolean hasNew) {
+            this.hasNew = hasNew;
         }
     }
 

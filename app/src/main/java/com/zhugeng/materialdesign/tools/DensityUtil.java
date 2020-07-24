@@ -6,7 +6,9 @@ import android.util.TypedValue;
 /**
  * Created by yxm on 16-6-23.
  */
-public class DensityUtil {
+public class DensityUtil  {
+
+
 
     private DensityUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
@@ -23,7 +25,7 @@ public class DensityUtil {
     /**
      * sp转px
      */
-    public static int sp2px(Context context, float spVal) {
+    public static int sp2px(final Context context, float spVal) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
                 spVal, context.getResources().getDisplayMetrics());
     }
@@ -42,4 +44,5 @@ public class DensityUtil {
     public static float px2sp(Context context, float pxVal) {
         return (pxVal / context.getResources().getDisplayMetrics().scaledDensity);
     }
+
 }

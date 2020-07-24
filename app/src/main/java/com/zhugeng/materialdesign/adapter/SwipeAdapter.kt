@@ -32,7 +32,7 @@ class SwipeAdapter (private var context: Context, private var datas: LinkedList<
     }
 
 
-    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(bean: BottomSheetBasicBean){
             itemView.findViewById<TextView>(R.id.item_name).text = bean.name
             itemView.findViewById<CircleImageView>(R.id.item_img).setImageResource(bean.resId)

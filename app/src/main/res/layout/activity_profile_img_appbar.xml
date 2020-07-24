@@ -20,12 +20,14 @@
             android:fitsSystemWindows="true">
 
             <ImageView
+                android:id="@+id/img_transition"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_collapseMode="parallax"
                 android:src="@drawable/photo_female_8"
                 android:scaleType="centerCrop"
-                android:fitsSystemWindows="true"/>
+                android:fitsSystemWindows="true"
+                android:transitionName="@string/img_transition_name"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -49,13 +51,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/tv_transition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Irene J. Fritz"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:layout_marginLeft="48dp"
-                android:layout_marginTop="28dp"/>
+                android:layout_marginTop="28dp"
+                android:transitionName="@string/tv_transition_name"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"

@@ -117,13 +117,13 @@
 2. According to the development of the Internet and the changes of the relevant laws and regulations of the People\'s Republic of China, the application will constantly improve the quality of service and modify the terms and conditions of membership services accordingly. The user\'s rights and obligations are expressed in the latest terms of service. The application reserves the right to modify or interrupt the service at any time without notifying you. The application exercises the right to modify or interrupt the service without being responsible for you or a third party.
 3. Guarantee the authenticity, correctness and completeness of the user\'s identity when using the services. If the information changes, you should change it in time. After completing the registration procedure safely and receiving a password and account number, you should keep the password and account number confidential. You are fully responsible for the activities of any person who uses your password and account number. This application is not responsible for any illegal or unauthorized use of your account and password.
 4. users should take full responsibility for what they publish in this application. If the user violates the laws and regulations of the state or the terms of this service, the application has the right to stop providing services to the user without assuming any liability, such as causing any damage to the application or the cooperative company or suffering from any disputes, litigation, claims from a third party, etc., the user shall compensate the application or the cooperative company accordingly. The user shall be liable for all consequences arising out of breach of the terms of service.
-5. The application draws the user's attention to the fact that the application has the right to modify the content of the service, interrupt or suspend some or all of the services without prior notice, in order to protect the autonomy of the company's business development and adjustment. The modification will be published in the form of announcement on the relevant pages of the application and will be deemed as notification once it is published.
+5. The application draws the user\'s attention to the fact that the application has the right to modify the content of the service, interrupt or suspend some or all of the services without prior notice, in order to protect the autonomy of the company\'s business development and adjustment. The modification will be published in the form of announcement on the relevant pages of the application and will be deemed as notification once it is published.
 6., this application attaches great importance to the protection of user privacy. Privacy protection is a basic policy of this application. The registration information provided by you and some other personal data about you retained by this application will be regulated by the privacy laws of China and the Privacy Protection Statement of this application.
 7. This service clause should be consistent with the relevant laws and regulations of the state. If there is any conflict between the service clause and the relevant laws and regulations, the conflict shall be governed by the provisions of the laws and regulations.</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="company_goal">Selected popular wallpapers are updated every day. All the dynamic Wallpapers you like are here.You can set up music dynamic wallpaper, so that your wallpaper is not monotonous and boring.Good wallpaper everyone share, upload your favorite wallpaper will have the opportunity to be included in the software oh.Participate in the production of dynamic wallpaper to become our original creator,\ let's make dynamic wallpaper into user's favorite wallpaper software.</string>
+    <string name="company_goal">Selected popular wallpapers are updated every day. All the dynamic Wallpapers you like are here.You can set up music dynamic wallpaper, so that your wallpaper is not monotonous and boring.Good wallpaper everyone share, upload your favorite wallpaper will have the opportunity to be included in the software oh.Participate in the production of dynamic wallpaper to become our original creator, let\'s make dynamic wallpaper into user\'s favorite wallpaper software.</string>
     <string name="location">Nanming District, Guiyang City, Guizhou Province, China</string>
     
 
@@ -132,4 +132,13 @@
 
     <string name="en_about">The best android implementation of material UI components.This app implemented based on Google Design Guidelines</string>
     <string name="ch_about">一款不错的Material Design UI 组件 APP.本应用基于谷歌设计指南实现</string>
+
+
+    <string name="card_transition_name">card_transition_name</string>
+    <string name="img_transition_name">img_transition_name</string>
+    <string name="tv_transition_name">tv_transition_name</string>
+    <string name="level1">SectionA</string>
+    <string name="details">Everything is difficult at the beginning, but a good start is half the battle.</string>
+
+
 </resources>

@@ -31,7 +31,7 @@ class BottomSheetFloatingAdapter(private val context: Context, private var datas
     }
 
 
-    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
 
         fun bind(bottomSheetFloatingBean: BottomSheetFloatingBean){
             itemView.item_img.setImageResource(bottomSheetFloatingBean.resId)

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_marginTop="8dp">
+
+        <include layout="@layout/bottom_navigation_content_layout"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#55676767"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:tint="@color/title_bar_background"
+            android:clickable="true"
+            android:padding="16dp"
+            android:background="@drawable/ripple_border"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_book"
+            android:tint="@color/title_bar_background"
+            android:padding="16dp"
+            android:background="@drawable/ripple_border"
+            android:clickable="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:backgroundTint="@color/title_bar_background"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white"
+            android:clickable="true"
+            app:rippleColor="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_favorite"
+            android:tint="@color/title_bar_background"
+            android:padding="16dp"
+            android:background="@drawable/ripple_border"
+            android:clickable="true"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile"
+            android:tint="@color/title_bar_background"
+            android:padding="16dp"
+            android:background="@drawable/ripple_border"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

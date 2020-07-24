@@ -31,7 +31,7 @@ class BottomSheetBasicAdapter(private var context:Context, private var datas: Li
     }
 
 
-    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(bean: BottomSheetBasicBean){
             itemView.findViewById<TextView>(R.id.item_tv_name).text = bean.name
             itemView.findViewById<CircleImageView>(R.id.item_head_img).setImageResource(bean.resId)

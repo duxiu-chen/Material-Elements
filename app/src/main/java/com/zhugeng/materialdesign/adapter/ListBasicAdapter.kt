@@ -47,7 +47,7 @@ class ListBasicAdapter(private val titles:LinkedList<String>, private val data: 
     }
 
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(item: ListBasicBean){
 
             itemView.findViewById<CircleImageView>(R.id.head_img).setImageResource(item.resId)

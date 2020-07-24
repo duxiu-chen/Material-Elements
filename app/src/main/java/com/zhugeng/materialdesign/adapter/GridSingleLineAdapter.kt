@@ -25,7 +25,7 @@ class GridSingleLineAdapter(private val data: IntArray, private val files: Linke
     }
 
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
         fun bind(resId: Int, name:String, context: Context){
             var img = itemView.findViewById<ImageView>(R.id.item_img)
             var displayMetrics: DisplayMetrics = context.resources.displayMetrics

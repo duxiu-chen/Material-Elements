@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.AppCompatButton
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
@@ -55,6 +56,8 @@ import com.zhugeng.materialdesign.adapter.ExpandAdapter
 import com.zhugeng.materialdesign.beans.MenuBeans
 import kotlinx.android.synthetic.main.activity_main.*
 import com.umeng.analytics.MobclickAgent
+import com.zhugeng.materialdesign.activity.anim.SVGAnimActivity
+import com.zhugeng.materialdesign.activity.anim.SharedElementActivity
 import com.zhugeng.materialdesign.activity.cards.CardsWizardOverlapActivity
 import com.zhugeng.materialdesign.activity.dialog.DialogImageActivity
 import com.zhugeng.materialdesign.activity.list.*
@@ -100,7 +103,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        expand_list_view.setOnChildClickListener { parent, v, groupPosition, childPosition, id ->
+        expand_list_view.setOnChildClickListener { _, v, groupPosition, childPosition, id ->
             when (groupPosition){
                 0 ->when(childPosition){
                     0 -> startActivity(Intent(this, BottomNavigationBasicActivity::class.java))
@@ -109,6 +112,8 @@ class MainActivity : AppCompatActivity() {
                     3 -> startActivity(Intent(this, BottomNavigationDarkActivity::class.java))
                     4 -> startActivity(Intent(this, BottomNavigationIconActivity::class.java))
                     5 -> startActivity(Intent(this, BottomNavigationPrimaryActivity::class.java))
+                    6 -> startActivity(Intent(this, BottomNavigationMainActivity::class.java))
+                    7 -> startActivity(Intent(this, BottomNavigationInsertActivity::class.java))
                 }
 
                 1 ->when(childPosition){
@@ -220,6 +225,10 @@ class MainActivity : AppCompatActivity() {
                     3 -> startActivity(Intent(this, AboutCompanyActivity::class.java))
                     4 -> startActivity(Intent(this, AboutCompanyCardActivity::class.java))
                 }
+                19 ->when(childPosition){
+                    0 -> startActivity(Intent(this, SVGAnimActivity::class.java))
+                    1 -> startActivity(Intent(this, SharedElementActivity::class.java))
+                }
             }
             return@setOnChildClickListener false
         }
@@ -235,7 +244,9 @@ class MainActivity : AppCompatActivity() {
         bottomNavigation.add(MenuBeans.ChildBeans("Dark"))
         bottomNavigation.add(MenuBeans.ChildBeans("Icon"))
         bottomNavigation.add(MenuBeans.ChildBeans("Primary"))
-        list.add(MenuBeans("Bottom Navigation", R.drawable.ic_bottom_navigation, 0, bottomNavigation, false))
+        bottomNavigation.add(MenuBeans.ChildBeans("Main", true))
+        bottomNavigation.add(MenuBeans.ChildBeans("Insert", true))
+        list.add(MenuBeans("Bottom Navigation", R.drawable.ic_bottom_navigation, 0, bottomNavigation, true))
 
         var bottomSheet :MutableList<MenuBeans.ChildBeans> = mutableListOf<MenuBeans.ChildBeans>()
         bottomSheet.add(MenuBeans.ChildBeans("Basic"))
@@ -367,6 +378,12 @@ class MainActivity : AppCompatActivity() {
         about.add(MenuBeans.ChildBeans("Company"))
         about.add(MenuBeans.ChildBeans("Company Card"))
         list.add(MenuBeans("About", R.drawable.ic_device_information, 0, about,false))
+
+        var anim: MutableList<MenuBeans.ChildBeans> = mutableListOf<MenuBeans.ChildBeans>()
+        anim.add(MenuBeans.ChildBeans("SVG Anim", true))
+        anim.add(MenuBeans.ChildBeans("Transition Anim", true))
+        list.add(MenuBeans("Animation", R.drawable.ic_device_information, 0, anim,true))
+
     }
 
 
